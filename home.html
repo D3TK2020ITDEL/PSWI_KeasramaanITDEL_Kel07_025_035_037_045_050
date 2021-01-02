@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="icon" type="image/png" href="del.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+</head>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop(); 
+  });
+});
+</script>
+<style>
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <br>
+  <a href="dashboard.html">
+    <img src="gambar/del.png" class="logo">
+  </a>
+  <h1 class="iii">Sistem Informasi Asrama IT Del</h1>
+</div>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="asrama.html">Asrama</a>
+  <a href="pengumuman.html">Pengumuman</a>
+  <a href="about.html">About</a>
+  <a href="conus.html">Contact Us</a>
+  <a href="More Info.html">More Info</a>
+  <a href="ijin bermalam.html">Izin Bermalam</a>
+</div>
+<main>
+  <div class="itdel">
+    <label class="h1">Institut</label><br>
+    <label class="h2">Teknologi Del</label>
+
+    <div id="flip">Defenisi Asrama IT Del</div>
+    <div id="panel">Asrama IT Del adalah suatu tempat penginapan dan bisa jugua disebut sebagai tempat tinggal
+  bagi seluruh mahasiswa yang berada di IT Del. Asrama ini merupakan sebuah bangunan dengan kamar-kamar yang dapat di tempati
+  oleh beberapa mahasiswa di setiap kamarnya.</div>
+
+  </div>
+  <div class="dorm">
+    <div class="col-md-5 col-xs-5">
+      <div id="myCarousel" class="carousel slide" dataride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">     
+          <li data-target="#myCarousel" data-slide-to="0" class="carousal"></li>     
+          <li data-target="#myCarousel" dataslideto="1"></li>
+          <li data-target="#myCarousel" dataslideto="2"></li>
+        </ol>    
+        <div class="carousel-inner" role="listbox">     
+          <div class="item active">      
+            <img src="gambar/pniel.jpg" alt="www.del.ac.id" class="carousal">
+            <div class="carousel-caption">       
+              <h3 class="caption">3M</h3>       
+              <p class="caption">Martuhan Marroha Marbisuk</p>      
+            </div>     
+          </div>     
+          <div class="item">      
+            <img src="gambar/antiokia.jpg" alt="www.del.ac.id" class="carousal">
+            <div class="carousel-caption">       
+              <h3 class="caption">TBC</h3>       
+              <p class="caption">Tertib Berbudaya Ceria</p>      
+            </div>     
+          </div>     
+          <div class="item">      
+            <img src="gambar/kaper.jpg" alt="www.del.ac.id" class="carousal">
+            <div class="carousel-caption">       
+              <h3 class="caption">IT DEL</h3>       
+              <p class="caption">Pemimpin yang selangkah lebih maju</p>
+              
+            </div>     
+          </div>    
+        </div>    
+        <!-- membuat panah next dan previous -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">    
+          <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>    
+          <span class="sr-only">Previous</span> 
+        </a>    
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">    
+          <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>    
+          <span class="sr-only">Next</span> 
+        </a>   
+      </div><br><br>
+    </div>
+  </div>
+    <div id="like_button_container"></div>
+    <div class="col-xs-12 col-md-12 kaki">
+      <p>Copyright &copy by Group 07</p>
+    </div>
+</main>
+</body>
+
+  <script src="like_button.js"></script>
+
+</body>
+</html>

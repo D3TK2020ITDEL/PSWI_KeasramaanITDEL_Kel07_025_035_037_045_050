@@ -1,0 +1,19 @@
+.halaman {
+    background-image: url('Plaza01.jpg');
+    background-attachment: fixed;  
+    background-size: cover;
+    background-size: 100% 100%;
+    width: 380px;
+    margin: 10px auto;
+}
+
+body {
+    background-image: url('view.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    width: 500px;
+    margin: 10px auto;
+}
+p {
+    color: white;
+}
